@@ -1,0 +1,67 @@
+const styles = {
+  loginCard: {
+    width: "360px",
+    maxWidth: "92%",
+    background:
+      "linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02))",
+    borderRadius: "16px",
+    padding: "28px",
+    boxShadow: "0 10px 40px rgba(2,6,23,0.7)",
+    border: "1px solid rgba(255,255,255,0.04)",
+    backdropFilter: "blur(8px)",
+    position: "relative",
+    zIndex: 2,
+    transformOrigin: "center",
+  },
+  cardHeader: { textAlign: "center", marginBottom: "6px" },
+  logo: { fontWeight: 700, fontSize: "22px", letterSpacing: "0.4px" },
+  logoSpan: { color: "var(--neon1)", marginLeft: "4px" },
+  subtitle: { color: "var(--muted)", fontSize: "13px", marginTop: "6px" },
+  form: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "12px",
+    marginTop: "12px",
+  },
+  input: {
+    width: "100%",
+    padding: "14px 12px 12px 12px",
+    background: "transparent",
+    borderRadius: "10px",
+    border: "1px solid rgba(255,255,255,0.04)",
+    color: "var(--text)",
+    outline: "none",
+    fontSize: "14px",
+  },
+  cta: {
+    marginTop: "6px",
+    width: "100%",
+    padding: "12px 16px",
+    borderRadius: "10px",
+    background: "linear-gradient(90deg, var(--neon1), var(--neon3))",
+    color: "#0b0b10",
+    fontWeight: 700,
+    border: "none",
+    cursor: "pointer",
+    boxShadow:
+      "0 6px 20px rgba(124,58,237,0.18), 0 2px 6px rgba(0,245,160,0.06)",
+    transition: "all .18s ease",
+  },
+  sbtn: {
+    padding: "8px 12px",
+    borderRadius: "8px",
+    background: "var(--glass)",
+    border: "1px solid rgba(255,255,255,0.03)",
+    color: "var(--text)",
+    cursor: "pointer",
+  },
+  footer: { marginTop: "12px", textAlign: "center", color: "var(--muted)" },
+  socials: {
+    display: "flex",
+    gap: "8px",
+    justifyContent: "center",
+    marginTop: "8px",
+  },
+};
+
+export default styles;

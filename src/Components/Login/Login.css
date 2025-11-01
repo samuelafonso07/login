@@ -8,10 +8,7 @@
     --glass: rgba(255, 255, 255, 0.04);
     --glass-2: rgba(255, 255, 255, 0.03);
     --text: #e6eefc;
-}
-
-
-.login-root {
+}.login-root {
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -21,47 +18,35 @@
     overflow: hidden;
     color: var(--text);
     font-family: Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-}
-
-.neon-bg {
+}.neon-bg {
     position: absolute;
     inset: 0;
     pointer-events: none
-}
-
-.neon-bg .blob {
+}.neon-bg .blob {
     position: absolute;
     filter: blur(40px);
     opacity: 0.68;
     transform: translate3d(0, 0, 0);
     mix-blend-mode: screen
-}
-
-.neon-bg .b1 {
+}.neon-bg .b1 {
     width: 420px;
     height: 420px;
     left: -8%;
     top: -10%;
     background: radial-gradient(circle at 20% 30%, var(--neon1), transparent 40%);
-}
-
-.neon-bg .b2 {
+}.neon-bg .b2 {
     width: 520px;
     height: 520px;
     right: -12%;
     top: -20%;
     background: radial-gradient(circle at 70% 40%, var(--neon2), transparent 35%);
-}
-
-.neon-bg .b3 {
+}.neon-bg .b3 {
     width: 360px;
     height: 360px;
     left: 30%;
     bottom: -10%;
     background: radial-gradient(circle at 60% 60%, var(--neon3), transparent 40%);
-}
-
-.login-card {
+}.login-card {
     width: 360px;
     max-width: 92%;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.02));
@@ -73,43 +58,29 @@
     position: relative;
     z-index: 2;
     transform-origin: center;
-}
-
-.card-header {
+}.card-header {
     text-align: center;
     margin-bottom: 6px
-}
-
-.logo {
+}.logo {
     font-weight: 700;
     font-size: 22px;
     letter-spacing: 0.4px
-}
-
-.logo span {
+}.logo span {
     color: var(--neon1);
     margin-left: 4px
-}
-
-.subtitle {
+}.subtitle {
     color: var(--muted);
     font-size: 13px;
     margin-top: 6px
-}
-
-.login-form {
+}.login-form {
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin-top: 12px
-}
-
-.field {
+}.field {
     position: relative;
     display: block
-}
-
-.field input {
+}.field input {
     width: 100%;
     padding: 14px 12px 12px 12px;
     background: transparent;
@@ -117,10 +88,8 @@
     border: 1px solid rgba(255, 255, 255, 0.04);
     color: var(--text);
     outline: none;
-    font-size: 14px
-}
-
-.field span {
+   font-size: 14px
+}.field span {
     position: absolute;
     left: 12px;
     top: 10px;
@@ -129,33 +98,23 @@
     transform-origin: left top;
     transition: all .18s ease;
     pointer-events: none
-}
-
-.field input:focus+span,
+}.field input:focus+span,
 .field input:not(:placeholder-shown)+span {
     transform: translateY(-12px) scale(.86);
     color: var(--neon2)
-}
-
-.row.between {
+}.row.between {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: -2px
-}
-
-.remember {
+}.remember {
     color: var(--muted);
     font-size: 13px
-}
-
-.forgot {
+}.forgot {
     color: var(--muted);
     font-size: 13px;
     text-decoration: none
-}
-
-.cta {
+}.cta {
     margin-top: 6px;
     width: 100%;
     padding: 12px 16px;
@@ -167,47 +126,30 @@
     cursor: pointer;
     box-shadow: 0 6px 20px rgba(124, 58, 237, 0.18), 0 2px 6px rgba(0, 245, 160, 0.06);
     transition: all .18s ease
-}
-
-.cta:disabled {
+}.cta:disabled {
     opacity: 0.6;
     cursor: not-allowed
-}
-
-.card-footer {
+}.card-footer {
     margin-top: 12px;
     text-align: center;
     color: var(--muted)
-}
-
-.socials {
+}.socials {
     display: flex;
     gap: 8px;
     justify-content: center;
     margin-top: 8px
-}
-
-.sbtn {
+}.sbtn {
     padding: 8px 12px;
     border-radius: 8px;
     background: var(--glass);
     border: 1px solid rgba(255, 255, 255, 0.03);
     color: var(--text);
     cursor: pointer
-}
-
-@media (max-width:420px) {
-    .login-card {
-        padding: 20px
-    }
-}
-
-
-.login-card::after {
+}@media (max-width:420px) {.login-card {padding: 20px}
+}.login-card::after {
     content: '';
     position: absolute;
     inset: -1px;
     border-radius: 16px;
     background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.02), transparent);
-    pointer-events: none
-}
+    pointer-events: none}
